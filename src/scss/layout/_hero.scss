@@ -1,0 +1,34 @@
+.hero {
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  &__title {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: flex-end;
+    // align-items: center;
+    font-family: $font-titles;
+    color: $color-light;
+    font-size: 2.625rem;
+    text-transform: uppercase;
+    margin: 240px 0 10px 15px;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+
+    &--item {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1rem;
+    color: $color-light;
+    margin: 10px 0 45px 15px;
+  }
+}
