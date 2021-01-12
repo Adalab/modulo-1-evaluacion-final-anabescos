@@ -1,0 +1,36 @@
+// Section1
+.section1 {
+  padding: 30px 15px 0;
+  &__insomnia {
+    margin-bottom: 1px;
+    font-size: 0.875rem;
+    color: $color-small;
+    font-family: $font-main;
+    text-transform: capitalize;
+  }
+  &__title {
+    @include title;
+  }
+  &__paragraph {
+    color: $color-medium-font;
+    font-family: $font-main;
+    font-size: 1.125rem;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    line-height: 1.67;
+  }
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px $color-buttons;
+    border-radius: 1.406rem;
+    width: 76px;
+    height: 45px;
+    .go {
+      text-decoration: none;
+      color: $color-buttons;
+      font-family: $font-main;
+    }
+  }
+}
