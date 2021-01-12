@@ -79,22 +79,30 @@
       text-decoration: none;
       font-family: $font-main;
       font-size: 1.25rem;
+      @include tablet {
+        width: 210px;
+        height: 45px;
+      }
+      @include desktop {
+        width: 255px;
+        height: 45px;
+      }
     }
   }
-}
-.subtitle_reasons {
-  @include subtitle;
-  @include tablet {
-    font-size: 1.5rem;
+  .subtitle_reasons {
+    @include subtitle;
+    @include tablet {
+      font-size: 1.5rem;
+    }
   }
-}
-.text_reasons {
-  font-family: $font-main;
-  font-size: 1.125rem;
-  line-height: 1.67;
-  color: $color-dark-font;
-  @include tablet {
-    font-size: 1.25rem;
-    line-height: 1.5;
+  .text_reasons {
+    font-family: $font-main;
+    font-size: 1.125rem;
+    line-height: 1.67;
+    color: $color-dark-font;
+    @include tablet {
+      font-size: 1.25rem;
+      line-height: 1.5;
+    }
   }
 }
