@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Evaluación final</title>
+    <title>Anonymous proxy</title>
     <script src="https://kit.fontawesome.com/d6db27f241.js" crossorigin="anonymous"></script> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
@@ -28,8 +28,8 @@
           </h1>
           <p class="hero__subtitle">In hac habitasse platea dictumst</p>
           <div class="hero__button">
-            <a href="#bottom" title="Scroll down" alt="Scrolll down">
-              <i class="fas fa-chevron-circle-down"></i>
+            <a href="#bottom" title="Ir abajo" alt="Ir abajo">
+              <img src="./assets/images/ico-scroll-down.svg" class="arrow" />
             </a>
           </div>
         </div>
@@ -37,75 +37,81 @@
         <section class="section1">
           <small class="section1__insomnia">Insomnia tips</small>
           <h2 class="section1__title">Looking through a window</h2>
-          <p class="section1__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, ullam modi! Deserunt magnam reprehenderit culpa quia, nisi voluptatibus provident.</p>
+          <p class="section1__paragraph">Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at luctus ex diam nec lectus. Vivamus semper sodales rutrum.</p>
           <div class="section1__button">
-            <a href="#" title="Read more">Go</a>
+            <a class="go" href="#" title="Read more">Go</a>
           </div>
         </section>
         <!-- Section2 -->
         <section class="section2" id="bottom">
-          <h2 class="section2__title">3 reasons tu purchase</h2>
-          <article class="section2__article">
-              <h3 class="section2__article--subtitle">Minus quidem doloremque</h3>
-              <p class="section2__article--text">Lorem ipsum dolor sit amet consectetur.</p>
-            </article>
-          <article class="section2__article">
-              <h3 class="section2__article--subtitle">Dicta temporibus</h3>
-              <p class="section2__article--text">sed excepturi ut libero eaque maxime eligendi.</p>
-            </article>
-          <article class="section2__article">
-              <h3 class="section2__article--subtitle">Eum dolore</h3>
-              <p class="section2__article--text"> Enim dolor incidunt ab quam laboriosam nesciunt reprehenderit</p>
-            </article>
+          <h2 class="section2__title">3 reasons to purchase</h2>
+          <div class="section2__wrapper1">
+              <article class="article">
+                  <h3 class="subtitle_reasons">Ut sed metus</h3>
+                  <p class="text_reasons">Lorem ipsum dolor sit amet consectetur.</p>
+                </article>
+        </div>
+          <div class="section2__wrapper2">
+              <article class="article">
+                  <h3 class="subtitle_reasons">Curabitur ac erat</h3>
+                  <p class="text_reasons">Mauris mattis urna quis lorem molestie.</p>
+                </article>
+        </div>
+          <div class="section2__wrapper3">
+              <article class="article">
+                  <h3 class="subtitle_reasons">Morbi dictum</h3>
+                  <p class="text_reasons">Aliquam in dolor et dolor tincidunt.</p>
+                </article>
+        </div>
           <div class="section2__button">
-            <a href="#" title="Read more">More reasons</a>
+            <a class="more_reasons"href="#" title="Leer más">More reasons</a>
           </div>
         </section>
       </main>
     <footer class="footer">
-        <div class="footer_up">
-          <a href="#" title="Scroll up">
-            <i class="fas fa-arrow-up"></i>
+        <div class="footer__up">
+          <a class="footer__up--link" href="#" title="Ir arriba">
+            <img class="footer__up--arrow"
+            src="./assets/images/ico-arrow.svg"/>
           </a>
         </div>
         <div class="footer__container">
           <nav class="footer__container--nav">
             <ul>
               <li>
-                  <a href="https://adalab.es/" title="Go to Articles">Articles</a>
+                  <a class="footer_nav_link" href="https://adalab.es/" title="Go to Articles">Articles</a>
                 </li>
                 <li>
-                  <a href="https://adalab.es/" title="Go to Books">Books</a>
+                  <a class="footer_nav_link"href="https://adalab.es/" title="Go to Books">Books</a>
                 </li>
                 <li>
-                  <a href="https://adalab.es/" title="Go to Events">Events</a>
+                  <a class="footer_nav_link"href="https://adalab.es/" title="Go to Events">Events</a>
                 </li>
                 <li>
-                  <a href="https://adalab.es/" title="Go to Reasons">Reasons</a>
+                  <a class="footer_nav_link" href="https://adalab.es/" title="Go to Reasons">Reasons</a>
                 </li>
                 <li>
-                  <a href="https://adalab.es/" title="Go to Tips">Tips</a>
+                  <a class="footer_nav_link" href="https://adalab.es/" title="Go to Tips">Tips</a>
                 </li>
           </ul>
           </nav>
           <nav class="footer__container--socialmedia">
             <ul>
               <li>
-                <a href="https://adalab.es/" title="Visit our Twitter">Twitter</a>
+                <a class="footer_sm_link"  href="https://adalab.es/" title="Visit our Twitter">Twitter</a>
               </li>
               <li>
-                <a href="https://adalab.es/" title="Visit our Instagram">Instagram</a>
+                <a class="footer_sm_link"  href="https://adalab.es/" title="Visit our Instagram">Instagram</a>
               </li>
               <li>
-                <a href="https://adalab.es/" title="Visit our Mastodon">Mastodon.social</a>
+                <a class="footer_sm_link"  href="https://adalab.es/" title="Visit our Mastodon">Mastodon.social</a>
               </li>
             </ul>
           </nav>
-          <small class="footer__container--copy">
-            <span>©2021</span>
-            <span>we <i class="fas fa-heart"></i> components </span>
+          <small class="footer__container--small">
+            <span class="copy">©2021</span>
+            <span class="copy">we <i class="fas fa-heart"></i> components </span>
           </small>
         </div>
-      </footer>
-    </body>
-    </html>
+    </footer>
+
