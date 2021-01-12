@@ -18,3 +18,8 @@
   color: $color-dark-font;
   @content;
 }
+@mixin subtitle {
+  font-family: $font-titles;
+  font-size: 1.125rem;
+  color: $color-dark-font;
+}
