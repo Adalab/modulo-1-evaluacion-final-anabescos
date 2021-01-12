@@ -9,15 +9,11 @@
   align-items: center;
 
   &__title {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: flex-end;
-    // align-items: center;
     font-family: $font-titles;
     color: $color-light;
     font-size: 2.625rem;
     text-transform: uppercase;
-    margin: 240px 0 10px 15px;
+    // margin-top: 240px;
     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 
     &--item {
@@ -29,6 +25,18 @@
   &__subtitle {
     font-size: 1rem;
     color: $color-light;
-    margin: 10px 0 45px 15px;
+    margin: 10px 0 45px;
+  }
+  &__button {
+    // display: block;
+    margin-bottom: 50px;
+    height: 45px;
+    width: 45px;
+    background-color: $color-light;
+    border-radius: 50%;
+    .arrow {
+      width: 20px;
+      margin: 18px 0 0 12px;
+    }
   }
 }
