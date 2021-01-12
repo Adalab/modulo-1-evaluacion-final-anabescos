@@ -23,9 +23,22 @@
     }
   }
   &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    color: $color-light;
     padding: 30px 0 45px;
+    @include tablet {
+      padding: 30px 0px 45px 0;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      text-align: left;
+    }
+    @include desktop {
+      justify-content: center;
+    }
 
     &--nav {
       .footer_nav_link {
@@ -36,7 +49,11 @@
       }
     }
     &--socialmedia {
-      padding: 30px 0;
+      padding: 30px 0 30px;
+      @include tablet {
+        padding: 0;
+        order: -1;
+      }
       .footer_sm_link {
         font-family: $font-main;
         line-height: 1.88;
@@ -45,11 +62,15 @@
       }
     }
     &--small {
+      font-size: 0.875rem;
+      color: $color-light;
       .copy {
         height: 30px;
+
         font-family: $font-main;
         display: block;
         font-size: 0.875;
+
         .fa-heart {
           color: $color-buttons;
         }
