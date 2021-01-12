@@ -2,4 +2,12 @@
 .section2 {
   background-color: $color-background-light;
   padding: 30px 15px 0 15px;
+  &__title {
+    @include title {
+      text-align: center;
+    }
+  }
+  &__wrapper {
+    display: grid;
+  }
 }
