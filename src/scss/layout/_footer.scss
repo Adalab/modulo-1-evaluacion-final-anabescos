@@ -37,7 +37,8 @@
       text-align: left;
     }
     @include desktop {
-      justify-content: center;
+      margin: 0 370px;
+      // justify-content: center;
     }
 
     &--nav {

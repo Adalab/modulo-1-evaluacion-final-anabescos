@@ -2,19 +2,22 @@
 .section2 {
   width: 100vw;
   background-color: $color-background-light;
-  // padding: 30px 0 60px 0;
-  display: grid;
-  grid-template-columns: 70px 180px 70px;
-  grid-template-rows: 30px 75px 138px 138px 138px 45px 60px;
-  text-align: center;
-  @include tablet {
-    grid-template-columns: 40px 229.3px 229.3px 229.3px 40px;
-    grid-template-rows: 30px 45px 217px 45px 60px;
-  }
-  @include desktop {
-    margin: 0 85px;
-    grid-template-columns: 85px 370px 370px 370px 85px;
-    grid-template-rows: 60px 90px 217px 45px 60px;
+  .grid_wrapper {
+    display: grid;
+    grid-template-columns: 70px 180px 70px;
+    grid-template-rows: 30px 75px 138px 138px 138px 45px 60px;
+    text-align: center;
+
+    @include tablet {
+      grid-template-columns: 40px 229.3px 229.3px 229.3px 40px;
+      grid-template-rows: 30px 45px 217px 45px 60px;
+    }
+    @include desktop {
+      margin: 0 85px;
+      text-align: center;
+      grid-template-columns: 85px 370px 370px 370px 85px;
+      grid-template-rows: 60px 90px 217px 45px 60px;
+    }
   }
   &__title {
     @include title {
@@ -36,6 +39,7 @@
     @include tablet {
       grid-column: 2/3;
       grid-row: 3/4;
+      padding-top: 40px;
     }
   }
   &__wrapper2 {
@@ -44,6 +48,7 @@
     @include tablet {
       grid-column: 3/4;
       grid-row: 3/4;
+      padding-top: 40px;
     }
   }
   &__wrapper3 {
@@ -52,6 +57,7 @@
     @include tablet {
       grid-column: 4/5;
       grid-row: 3/4;
+      padding-top: 40px;
     }
   }
 
