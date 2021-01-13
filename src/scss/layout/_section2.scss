@@ -4,18 +4,17 @@
   background-color: $color-background-light;
   .grid_wrapper {
     display: grid;
-    grid-template-columns: 70px 180px 70px;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
     grid-template-rows: 30px 75px 138px 138px 138px 45px 60px;
     text-align: center;
 
     @include tablet {
-      grid-template-columns: 40px 229.3px 229.3px 229.3px 40px;
+      grid-template-columns: 0.15fr 1fr 1fr 1fr 0.15fr;
       grid-template-rows: 30px 45px 217px 45px 60px;
     }
     @include desktop {
-      margin: 0 85px;
       text-align: center;
-      grid-template-columns: 85px 370px 370px 370px 85px;
+      grid-template-columns: 0.25fr 1fr 1fr 1fr 0.25fr;
       grid-template-rows: 60px 90px 217px 45px 60px;
     }
   }

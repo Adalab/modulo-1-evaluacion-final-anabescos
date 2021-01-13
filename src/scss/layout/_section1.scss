@@ -1,6 +1,7 @@
 // Section1
 .section1 {
   padding: 30px 15px 45px 15px;
+  width: 100vw;
 
   @include tablet {
     padding: 30px 39px 60px 39px;
