@@ -53,6 +53,10 @@
     border-radius: 1.406rem;
     width: 76px;
     height: 45px;
+    transition: color ease 0.8s;
+    &:hover {
+      background-color: $color-buttons;
+    }
 
     @include tablet {
       width: 91px;
@@ -64,7 +68,12 @@
       text-decoration: none;
       color: $color-buttons;
       font-family: $font-main;
+      font-weight: 500;
       padding: 8px 20px;
+      transition: color ease 0.8s;
+      &:hover {
+        color: $color-light;
+      }
       @include tablet {
         padding: 10px 30px;
       }

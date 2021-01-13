@@ -3,12 +3,14 @@
   z-index: 1000;
   top: 0;
   left: 0;
+
   &__icon {
     width: 44px;
     height: 44px;
-    margin: 0 94px 240px 0;
+    // margin: 0 94px 240px 0;
     padding: 15px 14px;
     background-color: $color-background-medium;
+
     &--link {
       width: 16px;
       height: 14px;
