@@ -1,0 +1,32 @@
+.section3 {
+  background-color: $color-buttons;
+  width: 100%;
+  display: none;
+  @include tablet {
+    display: flex;
+  }
+  &__wrapper {
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+
+      //   flex-direction: column;
+    }
+    &--title {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+      @include title {
+      }
+    }
+    &--subtitle {
+      width: 50%;
+      @include subtitle {
+      }
+    }
+    &--paragraph {
+      width: 50%;
+      font-family: $font-main;
+    }
+  }
+}

@@ -1,54 +1,72 @@
 <main class="main">
-    <!-- Hero -->
-    <div class="hero">
-      <h1 class="hero__title">
-        <span class="hero__title--item">Anonymous</span>
-        <span class="hero__title--item">proxy</span>
-      </h1>
-      <p class="hero__subtitle">In hac habitasse platea dictumst</p>
-      <div class="hero__button">
-        <a href="#bottom" title="Scroll down" alt="Scroll down">
-          <img src="./assets/images/ico-scroll-down.svg" class="arrow" />
-        </a>
+  <!-- Hero -->
+  <div class="hero">
+    <h1 class="hero__title">
+      <span class="hero__title--item">Anonymous</span>
+      <span class="hero__title--item">proxy</span>
+    </h1>
+    <p class="hero__subtitle">In hac habitasse platea dictumst</p>
+    <div class="hero__button">
+      <a href="#bottom" title="Scroll down" alt="Scroll down">
+        <img src="./assets/images/ico-scroll-down.svg" class="arrow" />
+      </a>
+    </div>
+  </div>
+  <!-- Section1 -->
+  <section class="section1">
+    <small class="section1__insomnia">Insomnia tips</small>
+    <h2 class="section1__title">Looking through a window</h2>
+    <p class="section1__paragraph">
+      Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at
+      luctus ex diam nec lectus. Vivamus semper sodales rutrum.
+    </p>
+    <div class="section1__button">
+      <a class="go" href="#" title="Read more">Go</a>
+    </div>
+  </section>
+  <!-- Section2 -->
+  <section class="section2" id="bottom">
+    <div class="grid_wrapper">
+      <h2 class="section2__title">3 reasons to purchase</h2>
+      <div class="section2__wrapper1">
+        <include
+          src="./articles.html"
+          subtitle="Ut sed metus"
+          text="Lorem ipsum dolor sit amet consectetur."
+        >
+        </include>
+      </div>
+      <div class="section2__wrapper2">
+        <include
+          src="./articles.html"
+          subtitle="Curabitur ac erat"
+          text="Mauris mattis urna quis lorem molestie."
+        >
+        </include>
+      </div>
+      <div class="section2__wrapper3">
+        <include
+          src="./articles.html"
+          subtitle="Morbi dictum"
+          text="Aliquam in dolor et dolor tincidunt."
+        >
+        </include>
+      </div>
+      <div class="section2__button">
+        <a class="more_reasons" href="#" title="Read more">More reasons</a>
       </div>
     </div>
-    <!-- Section1 -->
-    <section class="section1">
-      <small class="section1__insomnia">Insomnia tips</small>
-      <h2 class="section1__title">Looking through a window</h2>
-      <p class="section1__paragraph">Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at luctus ex diam nec lectus. Vivamus semper sodales rutrum.</p>
-      <div class="section1__button">
-        <a class="go" href="#" title="Read more">Go</a>
-      </div>
-    </section>
-    <!-- Section2 -->
-    <section class="section2" id="bottom">
-      <div class="grid_wrapper">
-        <h2 class="section2__title">3 reasons to purchase</h2>
-        <div class="section2__wrapper1">
-        <include
-        src="./articles.html"
-        subtitle="Ut sed metus"
-        text="Lorem ipsum dolor sit amet consectetur.">
-        </include>
-        </div>
-        <div class="section2__wrapper2">
-        <include
-        src="./articles.html"
-        subtitle="Curabitur ac erat"
-        text="Mauris mattis urna quis lorem molestie.">
-        </include>
-        </div>
-        <div class="section2__wrapper3">
-        <include
-        src="./articles.html"
-        subtitle="Morbi dictum"
-        text="Aliquam in dolor et dolor tincidunt.">
-        </include>
-        </div>
-        <div class="section2__button">
-        <a class="more_reasons"href="#" title="Read more">More reasons</a>
-        </div>
-      </div>
-    </section>
-  </main>
+  </section>
+  <section class="section3">
+    <div class="section3__wrapper">
+      <h1 class="section3__wrapper--title">Special offer</h1>
+      <h2 class="section3__wrapper--subtitle">20% discount</h2>
+      <p class="section3__wrapper--paragraph">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci
+        voluptatem sit optio placeat? Id est, necessitatibus facilis eum magnam
+        ea nisi aperiam fuga explicabo ullam, nostrum inventore qui fugiat
+        soluta.
+      </p>
+    </div>
+  </section>
+</main>
